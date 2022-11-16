@@ -12,33 +12,70 @@ $White: hsl(0, 0%, 100%)
 //  Body Copy
 
 $Fontsizeparagraph: 14px
- 
+
+$FontfamilyTitle: 'Fraunces', serif
+
+$FontfamilyParagraph: 'Montserrat', sans-serif
+
 .productContainerMain
- background: $Cream
- width: 100%
- height: 100vh
- display: grid
- grid-template-columns: 1fr
- grid-template-rows: 1fr auto
+  background: $Cream
+  width: 100%
+  height: 100vh
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr auto
 
 .productCard
- background: #fff
- max-width: 330px
- height: 90%
- place-self: center
- display: flex
- flex-direction: column
+  background: #fff
+  max-width: 340px
+  height: 610px
+  place-self: center
+  display: flex
+  flex-direction: column
+  border-radius: 10px
+  overflow: hidden
 
 .productCard--image
- background: red
- flex: 1 1 auto
+  flex: 0 1 auto
+img
+  width: 100%
+  height: 100%
+  object-fit: fill
 
 .productCard--info
- background: blue
- flex: 1 1 auto
-
-
-
-
-
-
+  flex: 1 1 auto
+  padding: 25px
+h1
+  font-family: $FontfamilyTitle
+p
+  font-family: $FontfamilyParagraph
+  color: $Darkgrayishblue
+  font-size: $Fontsizeparagraph
+.productCard--price
+  span:nth-child(1)
+    font-family: $FontfamilyTitle
+    color: $Darkcyan
+  span:nth-child(2)
+    font-family: $FontfamilyParagraph
+input
+  background: $Darkcyan
+  color: $White
+  border: none
+  width: 100%
+  border-radius: 8px
+  padding: 15px 0
+  font-size: $Fontsizeparagraph
+.containerFooter
+  display: grid
+  justify-items: center
+  background: #000
+  width: 100%
+h3
+  color: #fff
+  text-align: center
+a
+  color: #FF3F00
+  text-transform: capitalize
+  text-decoration: none
+  &:hover
+    text-decoration: underline
