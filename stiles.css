@@ -12,20 +12,18 @@
   max-width: 340px;
   height: 610px;
   place-self: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 1fr;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .productCard--image {
-  flex: 0 1 auto;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  background-image: url(./images/image-product-mobile.jpg);
+  flex: 3 1 auto;
+  background-size: cover;
+  background-position: center;
 }
 
 .productCard--info {
@@ -114,4 +112,26 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .productCard {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 600px;
+    height: 450px;
+  }
+  .productCard--image {
+    background-image: url(./images/image-product-desktop.jpg);
+    flex: 3 1 auto;
+  }
+  .productCard--info {
+    flex: 1 1 auto;
+  }
+  .productCard--info h1 {
+    word-spacing: 5px;
+  }
+  .productCard--info p {
+    word-spacing: 2px;
+  }
 }/*# sourceMappingURL=stiles.css.map */
