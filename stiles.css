@@ -60,6 +60,9 @@ button {
   align-self: start;
   font-weight: 700;
 }
+button:hover {
+  background: #183F31;
+}
 button img {
   width: 14px;
   height: 14px;
