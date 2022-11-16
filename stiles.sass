@@ -45,19 +45,20 @@ img
 .productCard--info
   flex: 1 1 auto
   padding: 25px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 h1
   font-family: $FontfamilyTitle
+  margin: 0
 p
   font-family: $FontfamilyParagraph
   color: $Darkgrayishblue
   font-size: $Fontsizeparagraph
-.productCard--price
-  span:nth-child(1)
-    font-family: $FontfamilyTitle
-    color: $Darkcyan
-  span:nth-child(2)
-    font-family: $FontfamilyParagraph
-input
+  line-height: 22px
+  margin: 0
+  word-spacing: -1px
+button
   background: $Darkcyan
   color: $White
   border: none
@@ -65,6 +66,35 @@ input
   border-radius: 8px
   padding: 15px 0
   font-size: $Fontsizeparagraph
+  font-family: $FontfamilyParagraph
+  align-self: start
+  font-weight: 700
+  img
+    width: 14px
+    height: 14px
+    padding-right: 10px
+.productCar--Type
+  color: $Darkgrayishblue
+  text-transform: uppercase
+  font-family: $FontfamilyParagraph
+  font-size: 12px
+  letter-spacing: 5px
+.productCard--price
+  display: flex
+  align-items: center
+  column-gap: 25px
+  span:nth-child(1)
+    font-family: $FontfamilyTitle
+    color: $Darkcyan
+    flex: 0 1 auto
+    font-size: 30px
+  span:nth-child(2)
+    font-family: $FontfamilyParagraph
+    font-size: $Fontsizeparagraph
+    flex: 1 1 auto
+    color: $Darkgrayishblue
+    text-decoration: line-through
+
 .containerFooter
   display: grid
   justify-items: center
